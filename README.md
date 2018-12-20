@@ -144,6 +144,7 @@ To uninstall WCS you must follow next steps:
 1. Do `wcs down` to stop WCS and delete all databases and kafka topics.
 2. Remove `${PREFIX}/share/wcs` and `${PREFIX}/etc/wcs` folders.
 3. Remove symbolic link named `wcs` in `${PREFIX}/bin` directory. If `bin` folder It isn't necessary, then you can delete it.
+4. Remove docker volumes. BE CAREFUL, this command will delete all your docker unused volumes `docker volume prune`
 
 ## Ports Binding
 
